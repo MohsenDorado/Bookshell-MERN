@@ -28,7 +28,7 @@ app.get('/', (request, response) => {
 app.use('https://mern-stack-bookshell.vercel.app/books', booksRoute);
 
 mongoose
-  .connect(mongoDBURL)
+  .connect('mongodb+srv://wwwmking3000:<password>@bookstore.fthy7qn.mongodb.net/?retryWrites=true&w=majority&appName=Bookstore')
   .then(() => {
     console.log('App connected to database');
     app.listen(PORT, () => {
