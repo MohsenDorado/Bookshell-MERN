@@ -13,7 +13,6 @@ app.use(cors(
   {
     origin:["https://mern-stack-bookshell.vercel.app"],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
-     allowedHeaders: ['Content-Type'],
     credentials:true
 
   }
